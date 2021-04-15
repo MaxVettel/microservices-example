@@ -1,0 +1,6 @@
+include 'cloud-config-server'
+include 'business-app-1'
+include 'business-app-2'
+
+
+rootProject.name = 'microservices-example'

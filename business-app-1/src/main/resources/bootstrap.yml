@@ -1,0 +1,13 @@
+server:
+  port: 8003
+
+spring:
+  # Name of application, used by config server
+  application:
+    name: business-app-1
+  cloud:
+    config:
+      # Location of config server
+      uri: http://localhost:8888
+      # Stop the application if can't connect to config service
+      fail-fast: true
