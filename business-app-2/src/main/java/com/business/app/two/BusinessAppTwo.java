@@ -23,4 +23,9 @@ public class BusinessAppTwo {
     public String greeting() {
         return serviceName;
     }
+
+    @GetMapping("/greeting")
+    public String sayHelloToFeignClient() {
+        return "Hello from Business App 2";
+    }
 }
