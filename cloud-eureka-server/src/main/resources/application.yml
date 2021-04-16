@@ -1,0 +1,15 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: cloud-eureka-server
+eureka:
+  client:
+    # При запуске не регистрирует сам сервис Эврики
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    # Name of current host, in this particular case it's better
+    # to set it manually
+    hostname: localhost

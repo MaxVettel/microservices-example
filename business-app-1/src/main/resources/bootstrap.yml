@@ -7,7 +7,15 @@ spring:
     name: business-app-1
   cloud:
     config:
-      # Location of config server
-      uri: http://localhost:8888
+      # Конфигурация Эврики на стороне сервиса в bootstrap файле
+      discovery:
+        enabled: true
+        service-id: cloud-config-server
       # Stop the application if can't connect to config service
       fail-fast: true
+
+# Конфигурация Эврики на стороне сервиса в bootstrap файле
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
