@@ -4,5 +4,7 @@ include 'business-app-2'
 
 include 'cloud-eureka-server'
 
+include 'cloud-gateway-zuul'
+
 
 rootProject.name = 'microservices-example'

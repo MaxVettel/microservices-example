@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloud-gateway-zuul
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+
+zuul:
+  routes:
+    app-1:
+      path: /greeting
+      url: http://localhost:8003
+    app-2:
+      path: /
+      url: http://localhost:8005
